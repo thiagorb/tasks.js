@@ -19,4 +19,4 @@ do
 	fi;
     total=$(($total + 1));
 done;
-echo Result: $succeded/$total tests succeded.
+echo Result: $succeded/$total tests succeeded.
