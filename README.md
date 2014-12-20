@@ -21,7 +21,7 @@ new Task(function () {
 
 There are some control flow helpers, that can be used for simulating loops. These control flows can be nested, and this makes the code very flexible.
 
-Task.If(condition, blockTrue, blockFalse): represents a task that uses the function 'condition' and determines wheter blockTrue of blockFalse should be executed.
+Task.If(condition, blockTrue, blockFalse): represents a task that uses the function 'condition' and determines wheter 'blockTrue' of 'blockFalse' should be executed.
 
 Task.While(condition, iteration): represents a while block.
 
