@@ -22,11 +22,11 @@ new Task(function () {
                         console.log("i", i, "j", j);
                         setTimeout(function () { flow.resume(); }, 10);
                     }
-                )
+                );
             }).then(function () {
                 console.log("end j");
             })
-        )
+        );
     })
 ).then(function () {
     console.log("c");
