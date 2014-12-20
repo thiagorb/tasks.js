@@ -1,7 +1,7 @@
 succeded=0
 total=0
 
-for case in $(find tests -name "*.js" | sed "s/tests\///")
+for case in $(cd tests; ls *.js)
 do
     case_expected_output_path=tests/expected/$(echo $case | sed -r "s/(.*)\.js$/\1.out/");
 	case_expected_output=$(cat $case_expected_output_path);
