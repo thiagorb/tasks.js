@@ -21,6 +21,15 @@ new Task(function () {
 
 There are some control flow helpers, that can be used for simulating loops. These control flows can be nested, and this makes the code very flexible.
 
+Task.If(condition, blockTrue, blockFalse): represents a task that uses the function 'condition' and determines wheter blockTrue of blockFalse should be executed.
+
+Task.While(condition, iteration): represents a while block.
+
+Task.For(condition, increment, iteration): similar to C for block. There is no initialization, so if you want to use an increment variable, you should declare it in the context of the task.
+
+Task.ForRange(start, end, iteration): represents a block that iterates from 'start' till 'end' (inclusive).
+
+Task.ForEach(array, iteration): represents a block that iterate over an array-like object.
 
 ### Testing
 Run the run_tests.sh script file.
